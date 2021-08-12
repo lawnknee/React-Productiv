@@ -42,6 +42,7 @@ function TodoApp({initialTodos}) {
         <div className="row">
 
           <div className="col-md-6">
+            <h3>Todos</h3>
             {todos.length > 0
               ? <EditableTodoList todos={todos} update={update} remove={remove}/>
               : <span className="text-muted">You have no todos.</span>}
@@ -57,7 +58,7 @@ function TodoApp({initialTodos}) {
 
             <section>
               <h3 className="mb-3">Add Nü</h3>
-              <TodoForm create={create}/>
+              <TodoForm handleSave={create}/>
             </section>
           </div>
 
