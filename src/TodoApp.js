@@ -17,7 +17,8 @@ import TodoForm from "./TodoForm";
  */
 
 function TodoApp({initialTodos}) {
-
+  console.log(initialTodos);
+  
   const [todos, setTodos] = useState(initialTodos);
 
   /** add a new todo to list */
